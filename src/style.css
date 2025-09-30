@@ -1,0 +1,27 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-air.css");
+@import url("observablehq:theme-slate.css");
+
+:root {
+  --theme-foreground-focus: green;
+}
+
+tr { height: 30px; }
+summary::marker {
+  font-size: 1.2rem;
+}
+td {
+    white-space: normal !important;
+    overflow: auto !important;
+}
+
+ul { padding: 0}
+
+li.issue {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.update { color: orange; font-weight: bold; }
+.strong-update { color: red; font-weight: bold; }
+.vf { color: green; font-size: 20px;}
