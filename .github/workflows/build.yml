@@ -35,7 +35,6 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm install
-        working-directory: .ci/dashboard
       - name: Generate report
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -45,7 +44,7 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: .ci/dashboard/build
+          path: dist
   deploy:
     needs: gen_report
     if: ${{ github.ref == 'refs/heads/main' }}
