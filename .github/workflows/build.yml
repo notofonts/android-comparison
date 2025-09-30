@@ -40,6 +40,7 @@ jobs:
       - name: Generate report
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm run build
       - name: Upload build artifacts
