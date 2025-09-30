@@ -25,10 +25,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: rsheeter/android_fonts
+          path: android_fonts
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:
           repository: notofonts/notofonts.github.io
+          path: notofonts.github.io
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
