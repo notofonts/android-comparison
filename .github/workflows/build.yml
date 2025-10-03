@@ -27,7 +27,7 @@ jobs:
         run: |
           wget $ANDROID_BETA_URL --quiet -O android.zip
           mkdir android
-          unzip android.zip -d android -j
+          unzip -j android.zip -d android
           mkdir android/system
           sudo mount -o loop,ro -t ext4 android/system.img android/system || sudo dmesg | tail -20
       - name: Checkout notofonts
