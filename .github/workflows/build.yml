@@ -1,9 +1,11 @@
 name: Build dashboard
+env:
+  ANDROID_BETA_URL: "https://dl.google.com/developers/android/baklava/images/factory/oriole_beta-bp31.250610.009-factory-55b4d2fb.zip"
 on:
-    workflow_dispatch:
-    schedule:
-        # Every Monday at 12am
-        - cron: "0 0 * * 1"
+  workflow_dispatch:
+  schedule:
+    # Every Monday at 12am
+    - cron: "0 0 * * 1"
 jobs:
   gen_report:
     runs-on: ubuntu-latest
@@ -21,11 +23,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install fonttools requests PyGithub
-      - name: Check out android_fonts
-        uses: actions/checkout@v3
-        with:
-          repository: rsheeter/android_fonts
-          path: android_fonts
+      - name: Grab and mount android fonts
+        run: |
+          wget $ANDROID_BETA_URL -O android.zip
+          mkdir android
+          unzip android.zip -d android
+          mkdir android/system
+          sudo mount -o loop,ro android/system.img android/system
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:

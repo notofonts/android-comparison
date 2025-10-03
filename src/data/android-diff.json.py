@@ -36,16 +36,20 @@ query ($owner: String!, $name: String!, $since: DateTime!) {
   }
 }
 """
-# Find highest api level fonts in android_fonts/api_level/
-levels = sorted(
-    [
-        int(x.name)
-        for x in Path("android_fonts/api_level/").iterdir()
-        if x.is_dir() and x.name.isdigit()
-    ],
-    reverse=True,
+
+# # Find highest api level fonts in android_fonts/api_level/
+# levels = sorted(
+#     [
+#         int(x.name)
+#         for x in Path("android_fonts/api_level/").iterdir()
+#         if x.is_dir() and x.name.isdigit()
+#     ],
+#     reverse=True,
+# )
+# THEIR_DIRECTORY = "android_fonts/api_level/" + str(levels[0])
+THEIR_DIRECTORY = os.environ.get(
+    "ANDROID_MOUNT_POINT", "android/system/mnt/system/fonts"
 )
-THEIR_DIRECTORY = "android_fonts/api_level/" + str(levels[0])
 
 g = Github(os.environ["GITHUB_TOKEN"])
 
