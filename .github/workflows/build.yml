@@ -25,11 +25,11 @@ jobs:
           pip install fonttools requests PyGithub
       - name: Grab and mount android fonts
         run: |
-          wget $ANDROID_BETA_URL -O android.zip
+          wget $ANDROID_BETA_URL --quiet -O android.zip
           mkdir android
           unzip android.zip -d android
           mkdir android/system
-          sudo mount -o loop,ro android/system.img android/system
+          sudo mount -o loop,ro -t ext4 android/system.img android/system
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:
