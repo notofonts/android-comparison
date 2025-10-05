@@ -28,6 +28,7 @@ jobs:
           wget $ANDROID_BETA_URL --quiet -O android.zip
           mkdir android
           unzip -j android.zip -d android
+          unzip -j android/image*zip -d android
           mkdir -p android/system/fonts
       - name: Move files from image to system
         run: |
