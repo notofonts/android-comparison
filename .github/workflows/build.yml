@@ -29,12 +29,8 @@ jobs:
           mkdir android
           unzip -j android.zip -d android
           unzip -j android/image*zip -d android
-          mkdir -p android/system/fonts
-      - name: Move files from image to system
-        run: |
-          sudo apt-get install libguestfs-tools
-          # Copy system/fonts from system.img to android/system/fonts
-          sudo guestfish --ro -a `pwd`/android/system.img -m / copy-out /fonts android/system/fonts
+          mkdir -p android/system
+          mount -o loop,ro -t ext4 android/system.img android/system || sudo dmesg | tail -20
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:
