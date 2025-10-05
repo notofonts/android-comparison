@@ -28,9 +28,12 @@ jobs:
           wget $ANDROID_BETA_URL --quiet -O android.zip
           mkdir android
           unzip -j android.zip -d android
-          mkdir android/system
-          sudo mount -o loop,ro -t ext4 android/system.img android/system || sudo dmesg | tail -20
-          find android/system -name '*.ttf'
+          mkdir -p android/system/fonts
+      - name: Move files from image to system
+        run: |
+          sudo apt-get install libguestfs-tools
+          # Copy system/fonts from system.img to android/system/fonts
+          sudo guestfish --ro -a android/system.img -m /system copy-out /system/fonts android/system/fonts
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:
