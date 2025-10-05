@@ -51,6 +51,8 @@ THEIR_DIRECTORY = os.environ.get(
     "ANDROID_MOUNT_POINT", "android/system/system/fonts"
 )
 
+assert os.path.exists(THEIR_DIRECTORY+"/Roboto-Regular.ttf"), f"No fonts in '{THEIR_DIRECTORY}'"
+
 g = Github(os.environ["GITHUB_TOKEN"])
 
 
@@ -100,7 +102,7 @@ for their_font in list(Path(THEIR_DIRECTORY).glob("*.?tf")):
         continue
     base = remove_suffixes(Path(their_font).name)
     if base not in android_equivalent:
-        # print(f"Can't find my version of {their_font}")
+        print(f"Can't find my version of {their_font}", file=os.sys.stderr)
         continue
 
     my_file = android_equivalent[base]["latest"]
