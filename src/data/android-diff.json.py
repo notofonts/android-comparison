@@ -48,7 +48,7 @@ query ($owner: String!, $name: String!, $since: DateTime!) {
 # )
 # THEIR_DIRECTORY = "android_fonts/api_level/" + str(levels[0])
 THEIR_DIRECTORY = os.environ.get(
-    "ANDROID_MOUNT_POINT", "android/system/mnt/system/fonts"
+    "ANDROID_MOUNT_POINT", "android/system/system/fonts"
 )
 
 g = Github(os.environ["GITHUB_TOKEN"])
