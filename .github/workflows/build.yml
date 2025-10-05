@@ -30,7 +30,8 @@ jobs:
           unzip -j android.zip -d android
           unzip -j android/image*zip -d android
           mkdir -p android/system
-          mount -o loop,ro -t ext4 android/system.img android/system || sudo dmesg | tail -20
+          test -f android/system.img || (echo "system.img not found!" && exit 1)
+          sudo mount -o loop,ro -t ext4 android/system.img android/system || sudo dmesg | tail -20
       - name: Checkout notofonts
         uses: actions/checkout@v3
         with:
