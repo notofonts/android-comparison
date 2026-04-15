@@ -1,4 +1,5 @@
 {
+	"Noto Music": "<b class='update'>Update requested.</b> Unicode 14 support",
 	"Noto Naskh Arabic": "<b class='update'>Update requested.</b> Support for multiple additional languages and Unicode codepoints",
 	"Noto Sans Adlam": "<b class='update'>Update requested.</b> Some minor linguistic fixes; also smaller!",
 	"Noto Sans Anatolian Hieroglyphs": "No change",
@@ -46,7 +47,7 @@
 	"Noto Sans Kayah Li": "",
 	"Noto Sans Kharoshthi": "",
 	"Noto Sans Khmer": "<b class='update'>Update requested.</b> Many small shaping fixes.",
-	"Noto Sans Khojki": "<b class='update'>Update requested.</b> Many small shaping fixes.",
+	"Noto Sans Khojki": "<b class='update'>Update requested.</b> Unicode 15 support, many small shaping fixes.",
 	"Noto Sans Lao": "",
 	"Noto Sans Lepcha": "",
 	"Noto Sans Limbu": "",
@@ -87,6 +88,7 @@
 	"Noto Sans Pahawh Hmong": "",
 	"Noto Sans Palmyrene": "",
 	"Noto Sans Pau Cin Hau": "",
+	"Noto Sans Phags Pa": "",
 	"Noto Sans Phoenician": "",
 	"Noto Sans Rejang": "",
 	"Noto Sans Runic": "",
@@ -96,8 +98,11 @@
 	"Noto Sans Shavian": "",
 	"Noto Sans Sinhala": "<b class='update'>Update requested.</b> This is a major re-engineering which reduces file size and increases conjunct coverage.",
 	"Noto Sans Sora Sompeng": "",
+	"Noto Sans Soyombo": "",
 	"Noto Sans Sundanese": "",
 	"Noto Sans Syloti Nagri": "",
+	"Noto Sans Symbols": "",
+	"Noto Sans Symbols 2": "<b class='update'>Update requested.</b> New codepoints, many small shaping fixes.",
 	"Noto Sans Syriac Eastern": "",
 	"Noto Sans Syriac Western": "",
 	"Noto Sans Tagalog": "",
@@ -105,6 +110,7 @@
 	"Noto Sans Tai Le": "",
 	"Noto Sans Tai Tham": "",
 	"Noto Sans Tai Viet": "",
+	"Noto Sans Takri": "<b class='update'>Update requested.</b> Unicode 14 support",
 	"Noto Sans Tamil": "",
 	"Noto Sans Telugu": "",
 	"Noto Sans Thaana": "",
@@ -116,6 +122,7 @@
 	"Noto Sans Warang Citi": "",
 	"Noto Sans Yi": "",
 	"Noto Serif": "",
+	"Noto Serif Ahom": "<b class='update'>Update requested.</b> Unicode 14 support",
 	"Noto Serif Armenian": "",
 	"Noto Serif Bengali": "<b class='update'>Update requested.</b> This is a major re-engineering which reduces file size and increases conjunct coverage.",
 	"Noto Serif Devanagari": "<b class='update'>Update requested.</b> Many small shaping fixes.",
@@ -125,16 +132,25 @@
 	"Noto Serif Gujarati": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Gurmukhi": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Hebrew": "",
+	"Noto Serif Hentaigana": "",
 	"Noto Serif Kannada": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Khmer": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Lao": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Malayalam": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Myanmar": "",
+	"Noto Serif Nyiakeng Puachue Hmong": "",
 	"Noto Serif Sinhala": "",
 	"Noto Serif Tamil": "",
 	"Noto Serif Thai": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Telugu": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Tibetan": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Yezidi": "",
+	"Noto Sans Mende Kikakui": "<b class='update'>Update requested.</b> New Unicode 7.0 script."
+	"Noto Sans Nag Mundari": "<b class='update'>Update requested.</b> New Unicode 15.0 script."
 	"Noto Sans Sunuwar": "<b class='strong-update'>Update strongly requested.</b> New Unicode 16.0 script. Eagerly awaited by Sunuwar language community."
+	"Noto Sans Tangsa": "<b class='update'>Update requested.</b> New Unicode 14.0 script."
+	"Noto Sans Tirhuta": "<b class='update'>Update requested.</b> New Unicode 7.0 script."
+	"Noto Sans Zanabazar Square": "<b class='update'>Update requested.</b> New Unicode 10.0 script."
+	"Noto Serif Toto": "<b class='update'>Update requested.</b> New Unicode 14.0 script."
+	"Noto Traditional Nushu": "<b class='update'>Update requested.</b> New Unicode 10.0 script."
 }
