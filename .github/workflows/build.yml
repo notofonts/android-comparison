@@ -1,6 +1,6 @@
 name: Build dashboard
 env:
-  ANDROID_BETA_URL: "https://dl.google.com/developers/android/baklava/images/factory/oriole_beta-bp31.250610.009-factory-55b4d2fb.zip"
+  ANDROID_BETA_URL: "https://dl.google.com/developers/android/CANARY/images/factory/shiba_beta-zp11.260717.006-factory-78620801.zip"
 on:
   workflow_dispatch:
   push:
