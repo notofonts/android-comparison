@@ -116,9 +116,14 @@ for their_font in list(Path(THEIR_DIRECTORY).glob("*.?tf")):
     )
     their_version = "%0.3f" % their_ttfont["head"].fontRevision
     my_version = "%0.3f" % my_ttfont["head"].fontRevision
+
     their_date = font_datetime(their_ttfont["head"].modified)
     their_bytesize = os.path.getsize(their_font)
     my_bytesize = os.path.getsize(my_file)
+
+    if their_version == my_version and their_bytesize == my_bytesize:
+        continue
+
     theirs_ymd = their_date.strftime("%Y-%m-%d")
     my_ymd = font_datetime(my_ttfont["head"].modified).strftime("%Y-%m-%d")
     vf_upgrade = "fvar" not in their_ttfont and "fvar" in my_ttfont
