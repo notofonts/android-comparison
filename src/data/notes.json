@@ -1,5 +1,6 @@
 {
-	"Noto Naskh Arabic": "<b class='update'>Update requested.</b> Support for Saudi Riyal symbol and improved Kashmiri support.",
+	"Noto Music": "<b class='update'>Update requested.</b> Some glyph fixes, New codepoints.",
+	"Noto Naskh Arabic": "",
 	"Noto Sans Adlam": "<b class='update'>Update requested.</b> Some linguistic fixes, one <a href='https://github.com/notofonts/tifinagh/issues/21'>critical</a>",
 	"Noto Sans Anatolian Hieroglyphs": "No change",
 	"Noto Sans Armenian": "No significant changes",
@@ -107,7 +108,7 @@
 	"Noto Sans Tai Viet": "",
 	"Noto Sans Tamil": "",
 	"Noto Sans Telugu": "",
-	"Noto Sans Thaana": "",
+	"Noto Sans Thaana": "<b class='update'>Update requested.</b> Add support for the Rufiyaa sign, New font design.",	
 	"Noto Sans Thai": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Sans Tifinagh": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Sans Ugaritic": "",
@@ -136,5 +137,12 @@
 	"Noto Serif Telugu": "",
 	"Noto Serif Tibetan": "<b class='update'>Update requested.</b> Many small shaping fixes.",
 	"Noto Serif Yezidi": "",
+	"Noto Sans Beria Erfe": "<b class='update'>Update requested.</b> New Unicode 17.0 script. Support for the Zaghawa language. No noto font released yet.",
+	"Noto Sans Garay": "<b class='update'>Update requested.</b> New Unicode 16.0 script. Support for the Wolof language. No noto font released yet.",
+	"Noto Sans Gurung Khema": "<b class='update'>Update requested.</b> New Unicode 16.0 script. Support for the Gurung language. No noto font released yet.",
+	"Noto Sans Kirat Rai": "<b class='update'>Update requested.</b> New Unicode 16.0 script. Support for the Bantawa language. No noto font released yet.",
+	"Noto Sans Nag Mundari": "<b class='update'>Update requested.</b> New Unicode 15.0 script. Support for the Mundari language.",
+	"Noto Sans Ol Onal": "<b class='update'>Update requested.</b> New Unicode 16.0 script. Support for the Bhumij language. No noto font released yet.",
 	"Noto Sans Sunuwar": "<b class='strong-update'>Update strongly requested.</b> New Unicode 16.0 script. Eagerly awaited by Sunuwar language community."
+	"Noto Sans Tolong Siki": "<b class='update'>Update requested. New Unicode 17.0 script. Support for the Kurukh language. No noto font released yet.</b>",
 }
